@@ -6,11 +6,11 @@
   If you experience any struggles with this sandbox, please raise an issue
   on github. :)
 */
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './example';
+import React from "react";
+import ReactDOM from "react-dom";
+//import App from './demo/fromjs.js';
+//import App from './demo/toJS';
+//import App from "./demo/mapList.js";
+import App from "./demo/API.js";
 
-ReactDOM.render(
-<App />,
-document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
