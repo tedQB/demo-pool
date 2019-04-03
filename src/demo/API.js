@@ -1,7 +1,9 @@
 import React from "react";
 import { Immutable, Map, List, toJS, fromJS } from "immutable";
+import PropTypes from "prop-types";
 
 function APIDemo() {
+  console.log(PropTypes.object);
   console.log("==Map==");
   console.log(Map());
   console.log(Map().toJS()); //{ }
