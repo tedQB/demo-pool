@@ -12,6 +12,7 @@ import ReactDOM from "react-dom";
 //import App from './demo/toJS';
 //import App from "./demo/mapList.js";
 //import App from "./demo/API.js";
-import App from "./demo/Hook";
+//import App from "./demo/Hook";
+import App from "./contextdemo2/App";
 
 ReactDOM.render(<App />, document.getElementById("root"));
