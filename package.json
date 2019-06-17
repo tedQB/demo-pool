@@ -10,7 +10,8 @@
     "react-addons-css-transition-group": "15.6.2",
     "react-dom": "latest",
     "react-router-dom": "latest",
-    "react-scripts": "2.0.0"
+    "react-scripts": "2.0.0",
+    "snabbdom": "0.7.2"
   },
   "devDependencies": {
     "react-scripts": "1.0.0"

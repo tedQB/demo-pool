@@ -8,6 +8,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "latest",
-    "react-scripts": "2.0.0"
+    "react-scripts": "2.0.0",
+    "webpack": "3.8.1"
   }
 }

@@ -13,6 +13,7 @@ import ReactDOM from "react-dom";
 //import App from "./demo/mapList.js";
 //import App from "./demo/API.js";
 //import App from "./demo/Hook";
-import App from "./contextdemo2/App";
+//import App from "./contextdemo2/App";
+import App from "./snabbdom/index";
 
 ReactDOM.render(<App />, document.getElementById("root"));
