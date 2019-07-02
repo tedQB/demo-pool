@@ -1,0 +1,16 @@
+.arrow {
+  display: inline-block;
+  border-left: 8px solid #222;
+  border-right: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.wrap {
+  display: flex;
+}
+.input {
+  width: 100%;
+}
+.button {
+}

@@ -14,6 +14,7 @@ import ReactDOM from "react-dom";
 //import App from "./demo/API.js";
 //import App from "./demo/Hook";
 //import App from "./contextdemo2/App"; //ceshi
-import App from "./snabbdom/index";
+//import App from "./snabbdom/index";
+import App from "./interview/toutiao";
 
 ReactDOM.render(<App />, document.getElementById("root"));
