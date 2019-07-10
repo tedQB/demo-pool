@@ -1,8 +1,11 @@
 import React,{ Component }from 'react'
 import ReactDOM from 'react-dom'
-import {version, Button } from "antd"
+import {LocaleProvider,DatePicker, message, version, Button } from "antd"
+import LocaleProviderDemo from './LocaleProvider'
 import "antd/dist/antd.css"
+import moment from 'moment'
 
+moment.locale('zh-cn')
 
 class App extends Component {
   state = {
@@ -12,11 +15,18 @@ class App extends Component {
 
   };
   render(){
+
+    const {date} = this.state;   
     return(
       
-      <div>
+      <div class="main">
         <Button type="primary">Example Button</Button>
+        <div>
+          <b>LocaleProviderDemo</b>
+          <LocaleProviderDemo />
+        </div>      
       </div>
+
     )
   }
 }
