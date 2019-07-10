@@ -4,6 +4,7 @@
   "description": "A simple example deployed using react-codesandboxer",
   "main": "index.js",
   "dependencies": {
+    "antd": "3.20.1",
     "assert": "1.4.1",
     "immutable": "latest",
     "react": "latest",
