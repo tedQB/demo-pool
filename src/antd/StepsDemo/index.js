@@ -1,5 +1,6 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import { Steps, Button, message } from "antd";
+import "./index.css";
 const { Step } = Steps;
 const steps = [
   {
@@ -35,7 +36,36 @@ export default class StepDemo extends Component {
     const { current } = this.state;
     return (
       <div>
-        <Steps current={current} />
+        <Steps current={current}>
+          {steps.map(item => (
+            <Step key={item.title} title={item.title} />
+          ))}
+        </Steps>
+        <div className="steps-content">{steps[current].content}</div>
+        <div className="steps-action">
+          {current < steps.length - 1 && (
+            <Button type="primary" onClick={() => this.next()}>
+              Next
+            </Button>
+          )}
+          {current === steps.length - 1 && (
+            <Button
+              type="primary"
+              onClick={() => message.success("Processing complete!")}
+            >
+              Done
+            </Button>
+          )}
+          {current > 0 && (
+            <Button
+              style={{ marginLeft: 8 }}
+              type="primary"
+              onClick={() => this.prev()}
+            >
+              Previous
+            </Button>
+          )}
+        </div>
       </div>
     );
   }

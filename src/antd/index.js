@@ -12,6 +12,7 @@ import {
 import LocaleProviderDemo from "./LocaleProvider";
 import PageHeaderDemo from "./PageHeaderDemo";
 import StepsDemo from "./StepsDemo";
+import AutoCompleteDemo from "./AutoCompleteDemo";
 import "antd/dist/antd.css";
 import moment from "moment";
 
@@ -42,14 +43,19 @@ class App extends Component {
       <div class="main">
         <Button type="primary">Example Button</Button>
         <div class="example">
+          <div>AutoCompleteDemo----</div>
+          <AutoCompleteDemo />
+        </div>
+        <div class="example">
+          <div>StepsDemo----</div>
           <StepsDemo />
         </div>
         <div class="example">
-          <div>LocaleProviderDemo</div>
+          <div>LocaleProviderDemo----</div>
           {/*<LocaleProviderDemo />*/}
         </div>
         <div class="example">
-          <div>PageHeaderDemo</div>
+          <div>PageHeaderDemo----</div>
           <PageHeader title="Title" breadcrumb={{ routes }} />
           <PageHeaderDemo />
         </div>
