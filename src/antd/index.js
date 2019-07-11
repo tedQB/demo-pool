@@ -1,7 +1,16 @@
 import React,{ Component }from 'react'
 import ReactDOM from 'react-dom'
-import {LocaleProvider,DatePicker, message, version, Button } from "antd"
+import {
+  LocaleProvider,
+  DatePicker, 
+  message, 
+  version, 
+  Button, 
+  PageHeader 
+} from "antd"
+
 import LocaleProviderDemo from './LocaleProvider'
+import PageHeaderDemo from './PageHeaderDemo'
 import "antd/dist/antd.css"
 import moment from 'moment'
 
@@ -17,14 +26,34 @@ class App extends Component {
   render(){
 
     const {date} = this.state;   
+    const routes = [
+  {
+    path: 'index',
+    breadcrumbName: 'First-level Menu',
+  },
+  {
+    path: 'first',
+    breadcrumbName: 'Second-level Menu',
+  },
+  {
+    path: 'second',
+    breadcrumbName: 'Third-level Menu',
+  },
+];
     return(
       
       <div class="main">
         <Button type="primary">Example Button</Button>
-        <div>
-          <b>LocaleProviderDemo</b>
-          <LocaleProviderDemo />
+        <div class="example">
+          <div>LocaleProviderDemo</div>
+          {/*<LocaleProviderDemo />*/}
         </div>      
+        <div class="example">
+          <div>PageHeaderDemo</div>
+            <PageHeader title="Title" breadcrumb={{routes}}/>
+            <PageHeaderDemo />
+        </div>
+
       </div>
 
     )
