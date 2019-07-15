@@ -28,11 +28,11 @@ class App extends Component {
     const routes = [
       {
         path: "index",
-        breadcrumbName: "First-level Menu"
+        breadcrumbName: "First-level Menu1"
       },
       {
         path: "first",
-        breadcrumbName: "Second-level Menu"
+        breadcrumbName: "Second-level Menu2"
       },
       {
         path: "second",

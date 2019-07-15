@@ -16,6 +16,6 @@ import ReactDOM from "react-dom";
 //import App from "./contextdemo2/App"; //ceshi
 //import App from "./snabbdom/index";
 //import App from "./interview/toutiao";
-import App from "./antd/index"
+import App from "./antd/index";
 
 ReactDOM.render(<App />, document.getElementById("root"));
