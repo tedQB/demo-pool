@@ -11,8 +11,10 @@
     "react": "latest",
     "react-addons-css-transition-group": "15.6.2",
     "react-dom": "latest",
+    "react-redux": "7.1.0",
     "react-router-dom": "latest",
     "react-scripts": "2.0.0",
+    "redux": "4.0.4",
     "snabbdom": "0.7.2"
   },
   "devDependencies": {
